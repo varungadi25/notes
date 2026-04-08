@@ -227,7 +227,7 @@ function saveNote() {
   if (editId) {
     const i = notes.findIndex(n => n.id === editId);
     if (i !== -1) {
-      notes[i] = { ...notes[i], title, body, tag, priority: selectedPriority, date: new Date().toISOString() };
+      notes[i] = { ...notes[i], title, body, tag, priority: selectedPriority, date: new Date().toLocaleDateString('en-IN') };
     }
   } else {
     if (notes.length >= 20) return;
@@ -264,8 +264,8 @@ function escHtml(s) {
 }
 
 function fmt(iso) {
-  return new Date(iso).toLocaleDateString('en-US', {
-    month: 'short', day: 'numeric', year: 'numeric'
+  return new Date(iso).toLocaleDateString('en-IN', {
+     day: 'numeric', month: 'short', year: 'numeric'
   });
 }
 
@@ -284,18 +284,9 @@ document.addEventListener('keydown', e => {
    SEED DEMO NOTES (only on first load)
    ================================================================ */
 if (notes.length === 0) {
-  const demos = [
-    { title: 'Project Deadline Tomorrow!',  body: 'Submit the final report to the manager by 9 AM. Do not miss this deadline.',                                                                    tag: 'Work',     priority: 'critical' },
-    { title: 'Buy Groceries',               body: 'Milk\nBread\nEggs\nFresh vegetables\nOlive oil\nCoffee',                                                                                        tag: 'Shopping', priority: 'general' },
-    { title: 'Meeting Notes',               body: 'Discuss Q1 goals with the team. Review project timeline and milestones. Assign tasks to team members.',                                         tag: 'Work',     priority: 'general' },
-    { title: 'Portfolio Website',           body: 'Build a personal portfolio website. Create a habit tracking app. Design a new logo for the brand.',                                             tag: 'Ideas',    priority: 'medium-purple' },
-    { title: 'Book Recommendations',        body: '1. Atomic Habits by James Clear\n2. Deep Work by Cal Newport\n3. The Psychology of Money by Morgan Housel',                                    tag: 'Personal', priority: 'medium-blue' },
-    { title: 'Workout Plan',                body: 'Monday: Chest & Triceps\nTuesday: Back & Biceps\nWednesday: Rest\nThursday: Legs\nFriday: Shoulders\nSat/Sun: Cardio',                         tag: 'Health',   priority: 'low' },
-  ];
-  const base = new Date('2024-01-15');
-  demos.forEach((d, i) => {
-    notes.push({ ...d, id: 'demo' + i, date: new Date(base.getTime() + i * 86400000).toISOString() });
-  });
+  notes.push({ id: 'demo1', title: 'Welcome to Notes App', body: 'This is a demo note to get you started. Feel free to edit or delete it!', tag: 'none', priority: 'general'
+ , date: new Date().toISOString() });
+  
   save();
 }
 
