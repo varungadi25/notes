@@ -45,7 +45,7 @@ const PRIORITY_HINTS = {
 };
 
 /* ── App State ── */
-let notes           = JSON.parse(localStorage.getItem('notes_v2') || '[]');
+let notes           = [];
 let editId          = null;
 let activeTag       = 'All';
 let activePri       = 'all';
