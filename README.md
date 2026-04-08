@@ -15,16 +15,14 @@ A priority-based notes application that helps you organize tasks efficiently usi
 💾 LocalStorage persistence
 📝 Smart Notes App
 
-A priority-based notes application that helps you organize tasks efficiently using tags, search, and color-coded importance levels.
+🎯 Why This Project
 
-🌐 Live Demo
+Built to make note-taking simple, structured, and priority-driven instead of cluttered.
 
-👉 https://vercel.com/varungadi12-9306s-projects/notes
+🚀 Future Improvements
+Authentication
+Cloud sync
+Reminders
+👨‍💻 Author
 
-✨ Features
-➕ Add, edit, delete notes
-🔍 Real-time search
-🏷️ Tag & priority filtering
-🎯 Priority-based sorting (Critical → Low)
-🌙 Dark / ☀️ Light mode
-💾 LocalStorage persistence
+Varun Gadi
