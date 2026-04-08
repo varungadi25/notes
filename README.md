@@ -1,0 +1,30 @@
+📝 Smart Notes App
+
+A priority-based notes application that helps you organize tasks efficiently using tags, search, and color-coded importance levels.
+
+🌐 Live Demo
+
+👉 https://vercel.com/varungadi12-9306s-projects/notes
+
+✨ Features
+➕ Add, edit, delete notes
+🔍 Real-time search
+🏷️ Tag & priority filtering
+🎯 Priority-based sorting (Critical → Low)
+🌙 Dark / ☀️ Light mode
+💾 LocalStorage persistence
+📝 Smart Notes App
+
+A priority-based notes application that helps you organize tasks efficiently using tags, search, and color-coded importance levels.
+
+🌐 Live Demo
+
+👉 https://vercel.com/varungadi12-9306s-projects/notes
+
+✨ Features
+➕ Add, edit, delete notes
+🔍 Real-time search
+🏷️ Tag & priority filtering
+🎯 Priority-based sorting (Critical → Low)
+🌙 Dark / ☀️ Light mode
+💾 LocalStorage persistence
