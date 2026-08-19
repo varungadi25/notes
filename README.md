@@ -4,7 +4,7 @@ A priority-based notes application that helps you organize tasks efficiently usi
 
 🌐 Live Demo
 
-👉 notes-ten-lemon.vercel.app
+👉 https://notes-ten-lemon.vercel.app/
 
 ✨ Features
 ➕ Add, edit, delete notes
